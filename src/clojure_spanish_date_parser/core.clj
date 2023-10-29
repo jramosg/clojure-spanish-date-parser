@@ -15,7 +15,6 @@
   (str "(?:" (str/join "|" coll) ")"))
 
 (defn- my-format [format [y m d]]
-  (prn "e" y m d)
   (jt/format format (jt/local-date y m d)))
 
 ; regex-1
