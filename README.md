@@ -1,2 +1,7 @@
 # clojure-spanish-date-parser
-Parse spanish date strings to desired format
+
+Read a date in spanish and parse it to the desired format.
+Lee una fecha en español y conviertela al formato que desees.
+
+## Author
+- [Jon Ramos](https://github.com/jramosg)
