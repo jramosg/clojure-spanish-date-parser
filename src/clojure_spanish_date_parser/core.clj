@@ -100,7 +100,6 @@
   (re-pattern (str day-regex regex-4-separator (or-regex month-names-abbr) regex-4-separator "\\s?(?:2\\.?0[0-9][0-9]|9[0-9]|1[0-9]|0[0-9]|2[0-9])\\b")))
 
 (defn- regex-4-parser [s]
-  (prn "4")
   (let [[_ day month-str year] (re-matches (re-pattern (str/join regex-4-separator (repeat 3 "(.*)"))) s)]
     [(Integer/parseInt year)
      (inc (.indexOf month-names-abbr month-str))
