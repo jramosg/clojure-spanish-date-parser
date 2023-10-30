@@ -20,6 +20,7 @@
   (is (= (date-parser "01 enero de 2023") "01/01/2023"))
   (is (= (date-parser "01 enero del 2023") "01/01/2023"))
   (is (= (date-parser "01 de enero del 2023") "01/01/2023"))
+  (is (= (date-parser "18. Noviembre 2020") "18/11/2020"))
   ;regex 4 test
   (is (= (date-parser "01 Feb 2023") "01/02/2023"))
   (is (= (date-parser "1 Feb 2023") "01/02/2023"))

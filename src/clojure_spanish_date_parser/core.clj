@@ -69,7 +69,7 @@
                    "(?:\\sde\\s|\\s|\\sdel\\s)(?:2\\.?0[0-9][0-9]|9[0-9]|1[0-9]|0[0-9]|2[0-9])")))
 
 (defn- regex-3-parser [s]
-  (let [s (str/replace s #"(?:\sdel|\sde)" "")
+  (let [s (str/replace s #"(?:\sdel|\sde|\.)" "")
         [d mont-str y] (str/split s #" ")]
     [(Integer/parseInt y)
      (inc (.indexOf month-names mont-str))
