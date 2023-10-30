@@ -30,4 +30,3 @@
   ;no matching
   (is (= (date-parser "blablabla") "blablabla")))
 
-(run-tests)
